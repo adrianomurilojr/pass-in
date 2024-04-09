@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Novo Evento 2",
+  "details": null,
+  "maximumAttendees": 1
+}
+
+### 
+
+POST http://localhost:3333/events/45ac352c-f063-41b9-86f5-c3ace5ae7b2c/attendees
+Content-Type: application/json
+
+{
+  "name": "Adriano Murilo",
+  "email": "adriano_murilo@hotmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/45ac352c-f063-41b9-86f5-c3ace5ae7b2c
+
+###
+
+GET http://localhost:3333/attendees/3/badge
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+###
+
+GET http://localhost:3333/events/45ac352c-f063-41b9-86f5-c3ace5ae7b2c/attendees
